@@ -10,36 +10,52 @@
 <body>
     <div id="nav">
         <button id="return" class="button">↞</button>
-        <h1 id="currentpark">Zion National</h1>
+        <h1 id="currentPark"></h1>
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Back to Results</button>
+
     </div>
     <div id="maincontainer">
 
         <div id = "parkcontainer">
-            <h1 id = "address">Address</h1>
-            <h2 id = "hours">Hours</h2>
-            <img id="minimap" src="./assets/pics/Map.PNG" alt="">
+            <section id = 'addressSection'>
+            <h2>Address:</h2>
+            <div id = "address">
+            </div>
+        </section>
+        <section id = 'hoursSection'>
+            <h2>Hours:</h2>
+            <div id = "hours">
+            </div>
+        </section>
+        <img id="parkPic" src="" alt="">
         </div>
 
         <div id="sidecontainer">
+            <h2>About</h2>
+            <div id = 'aboutPark'>
+                
+            </div>
+
+            <h2>Things to do</h2>
             <div id="activities">
-                Things to do
+                
             </div>
             <div id="news">
-                Current News
+                <h2>News</h2>
+                <div id="news-content"> <!--JRM added-->
+                    <div id="news-content00" class="news-release"></div>
+                    <div id="news-content01" class="news-release"></div>
+                    <div id="news-content02" class="news-release"></div>
+                    <div id="news-content03" class="news-release"></div>
+                    <div id="news-content04" class="news-release"></div>
+                </div> 
             </div>
-            <div id="events">
-                Events
-            </div> 
+            <!-- <div id="events">
+                <h2>Events</h2>
+            </div>  -->
         </div>
     <div>
-        
- 
-
-<!--Modal-->
-<h2>Bottom Modal</h2>
-
-<!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -54,11 +70,10 @@
         <!--Modal content goes here-->
     </div>
     <div class="modal-footer">
-        <h3>Modal Footer</h3>
+        <h3></h3>
     </div>
 </div>
 
-<!--- </div> --> 
 <script src="result.js"></script>
 
 </body>
